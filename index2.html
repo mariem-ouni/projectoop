@@ -1,0 +1,125 @@
+
+Vous avez envoyé
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Pocket Watch Store</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <img src="pocket99.jpg" alt="Pocket Watch Store Logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="icon-cart">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+                    </svg>
+                    <span>0</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="total">Total: <span>0</span> $</h2>
+        <div class="products-list">
+            <!-- Product Listings -->
+
+            <div class="product">
+                <img src="watch4.jpeg" alt="Silver Pocket Watch" onclick="addToCart(0)">
+                <h2>Silver Pocket Watch</h2>
+                <h4><span class="price">24.22</span> $</h4>
+                <button class="minus">-</button>
+                <p class="quantity">0</p>
+                <button class="plus">+</button>
+                <div class="product_icons">
+                    <i class="fa-solid fa-trash" onclick="removeItem(0)" aria-label="Remove item"></i>
+                    <i class="fa-regular fa-heart" aria-label="Favorite"></i>
+                    <i class="fa-solid fa-code-compare" aria-label="Compare"></i>
+                    <i class="fa-solid fa-eye" aria-label="View"></i>
+                </div>
+            </div>
+
+            <!-- Repeat for other products -->
+
+            
+            <div class="product">
+                <img src="watch3.jpeg" alt="One Piece Pocket Watch">
+                <h2>One Piece Pocket Watch</h2>
+                <h4><span class="price">40.95</span> $</h4>
+                <button class="minus">-</button>
+                <p class="quantity">0</p>
+                <button class="plus">+</button>
+                <div class="product_icons">
+                    <i class="fa-solid fa-trash" onclick="removeItem(1)" aria-label="Remove item"></i>
+                    <i class="fa-regular fa-heart" aria-label="Favorite"></i>
+                    <i class="fa-solid fa-code-compare" aria-label="Compare"></i>
+                    <i class="fa-solid fa-eye" aria-label="View"></i>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images44.jpeg" alt="Gold Pocket Watch">
+                <h2>Gold Pocket Watch</h2>
+                <h4><span class="price">22.50</span> $</h4>
+                <button class="minus">-</button>
+                <p class="quantity">0</p>
+                <button class="plus">+</button>
+                <div class="product_icons">
+                    <i class="fa-solid fa-trash" onclick="removeItem(2)" aria-label="Remove item"></i>
+                    <i class="fa-regular fa-heart" aria-label="Favorite"></i>
+                    <i class="fa-solid fa-code-compare" aria-label="Compare"></i>
+                    <i class="fa-solid fa-eye" aria-label="View"></i>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="watch66.jpeg" alt="Black Pocket Watch">
+                <h2>Black Pocket Watch</h2>
+                <h4><span class="price">75.00</span> $</h4>
+                <button class="minus">-</button>
+                <p class="quantity">0</p>
+                <button class="plus">+</button>
+                <div class="product_icons">
+                    <i class="fa-solid fa-trash" onclick="removeItem(3)" aria-label="Remove item"></i>
+                    <i class="fa-regular fa-heart" aria-label="Favorite"></i>
+                    <i class="fa-solid fa-code-compare" aria-label="Compare"></i>
+                    <i class="fa-solid fa-eye" aria-label="View"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="cartTab">
+            <h1>Shopping Cart</h1>
+            <div class="products-list">
+                <!-- Cart Items Will Be Updated Here -->
+            </div>
+            <div class="button">
+                <button class="close">CLOSE</button>
+                <button class="checkOut">CHECK OUT</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 All rights reserved - Stauer family of companies. News!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
